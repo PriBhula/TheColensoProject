@@ -1,0 +1,46 @@
+/*TODO: CHANGE WHOLE PAGE COLOUR TO #fdfdfd*/
+
+@font-face{
+		font-family: Bebas;
+		src: url(Bebas.otf);
+}
+
+h1{
+	text-align: center;
+	padding-left: -100px;
+	color: black;
+	font-family: Bebas;
+	font-size: 60px;
+}
+
+h2{
+	text-align: right;
+	padding-left: 30px;
+	color: #afb76e;
+	font-family: Bebas;
+	font-size: 40px;
+}
+
+p.text{
+	color: white;
+	font-family: sans-serif;
+}
+
+#leftContent{
+	width: 45%;
+	height:20%;
+	position: absolute;
+	background-color: #afb76e;
+	padding: 1%;
+	margin-left: 1%;
+	margin-right: 50%;
+}
+
+#rightContent{
+	width: 46%;
+	height:20%;
+	position: absolute;
+	background-color: #afb76e;
+	margin-left: 50%;
+	padding: 1%;
+}
