@@ -34,20 +34,16 @@
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand">The Colenso Project</a>
+        <div class="navbar-header">   
+          <a href="#">
+              <img src="/images/Logo.png" height=100px>            
+          </a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div>
           <ul class="nav navbar-nav">
-            <li><a href=/index.html>Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href=/browseDB.html>Browse</a></li>
-            <li class="active"><a href="#">Add</a></li>
+            <li class=active><a href="#">Add</a></li>
             <li><a href=/searchDB.html>Search</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -59,14 +55,39 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>ADD</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
+        <h1>add to our collection</h1>
+        <form>
+          <div class="form-group">
+            <label>Title:</label>
+            <input type="text" class="form-control" placeholder="Title">
+          </div>
+          <div class="form-group">
+            <label>Author:</label>
+            <input type="text" class="form-control" placeholder="Author">
+          </div>
+           <div class="form-group">
+            <label>Date of Publication:</label>
+            <input type="date" class="form-control">
+          </div>
+           <div class="form-group">
+            <label>Place of Publication:</label>
+            <input type="text" class="form-control" placeholder="Place">
+          </div>
+          <div class="form-group">
+            <input type="file" id="exampleInputFile">
+            <p class="text"><b>Note:</b>Only XML files can be uploaded</p>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">Mark as private
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default btn-lg">Add to collection</button>
+        </form>
       </div>
-
+      <footer class="footer">
+        <p>&copy; Priyanka Bhula 2016</p>
+      </footer>
     </div> <!-- /container -->
 
 
