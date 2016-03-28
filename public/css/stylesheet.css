@@ -39,8 +39,14 @@ div.checkbox{
 }
 
 button.btn-default{
-	margin-left: 40%;
+	float: center;
+	position: relative;
 }
+
+footer{
+	background-color: #eee;
+	width:100%;
+	padding-left: 5px;}
 
 nav{
 	width:100%;
