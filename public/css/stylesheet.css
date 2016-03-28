@@ -20,14 +20,13 @@ h2{
 	font-size: 40px;
 }
 
+body{
+	background-image: url("/images/1.jpg")
+}
+
 p.text{
 	font-family: sans-serif;
 	font-size: 15px;
-}
-
-div.input-group{
-	margin-left:50%;
-	margin-right: -50%
 }
 
 div.form-group{
@@ -47,7 +46,7 @@ nav{
 	width:100%;
 }
 ul{
-	width:80%;
+	width:85%;
 	/*height: 100px;*/
 }
 

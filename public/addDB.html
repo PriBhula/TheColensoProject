@@ -33,15 +33,19 @@
 
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">   
-          <a href="#">
-              <img src="/images/Logo.png" height=100px>            
-          </a>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a href="#"><img src="/images/Logo.png" height=100px></a>
         </div>
-        <div>
+        <div id="navbar" class="navbar-collapse collapse" height=100px>
           <ul class="nav navbar-nav">
-            <li><a href="/index.html">Home</a></li>
+           <li><a href="/index.html">Home</a></li>
             <li><a href=/browseDB.html>Browse</a></li>
             <li class=active><a href="#">Add</a></li>
             <li><a href=/searchDB.html>Search</a></li>
