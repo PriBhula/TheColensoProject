@@ -7,9 +7,9 @@ block body
   +img-responsive("images/Logo.png","The Colenso Project")
   .container
     +navbar("","dropdown_menu")
-      +nav_item("/","active") Home
+      +nav_item("/") Home
       +nav_item("/browse") Browse
-      +nav_item("/search") Search
+      +nav_item("/search","active") Search
       +nav_item("/add") Add
   br
   br
@@ -18,15 +18,15 @@ block body
   .container
     h1= title
     .container
-    h2 Use a string
-    form(name="form-inline",action="/searchStr",method="get")
-      +input("text","search","Enter a string","",name="searchString")
+      h2 Use a string
+      form(name = "formString", action="/searchStr", method="get")
+        input(placeholder="Enter string", type="text", name="stringsearch").form-control
+        button(type="submit").btn.btn-success Submit
       br
-      button(type="submit").btn.btn-success Submit
-  .container
-    h2 Use An XQuery
-    form(name="form-inline",action="/searchXQ",method="get")
-      +input("text","search","Enter an XQuery","",name="searchXQ")
+    .container
+      h2 Use an xquery
+      form(name = "formTags", action="/searchXQ", method="get")
+        input(placeholder="Enter XQuery", type="text", name="xquerysearch").form-control
+        button(type="submit").btn.btn-success Submit
       br
-      button(type="submit").btn.btn-success Submit
 

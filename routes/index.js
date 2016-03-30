@@ -104,13 +104,14 @@ router.get("/viewFile",function(req,res){
 			console.log(error);
 		}
 		else{
-			res.render('viewFile',{title:'Search Our Collection', fileName: req.query.file,file: result.result});
+			fileName = req.query.file
+			res.render('viewFile',{title:'Search Our Collection', fileName: fileName,file: result.result});
 		}
 	});
 });
 
 router.get("/viewRaw",function(req,res){
-	client.execute(tei + "(doc('Colenso/"+req.query.file+"'))[1]", function (error, result) {
+	client.execute(tei + "(doc('Colenso/"+fileName+"'))[1]", function (error, result) {
 		if(error){
 	   		console.error(error);
 	  	}
@@ -120,7 +121,18 @@ router.get("/viewRaw",function(req,res){
 	});
 });
 
-router.get("download",function(req,res){
+router.get("/download",function(req,res){
+	client.execute(tei+"(doc('Colenso/"+fileName+"'))[1]", function (error, result) {
+    	if(error){
+        	console.error(error);
+        }
+        else {
+        	res.writeHead(200, {
+          	'Content-Type': 'application/force-download','Content-disposition': 'attachment; filename=' + fileName,
+        });
+		res.write(result.result);
+        res.end();
+    }});
+});	
 
-});
 module.exports = router;
