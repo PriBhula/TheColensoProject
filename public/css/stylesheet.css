@@ -13,9 +13,7 @@ h1{
 }
 
 h2{
-	text-align: right;
-	padding-left: 30px;
-	color: #afb76e;
+	color: black;
 	font-family: Bebas;
 	font-size: 40px;
 }
@@ -58,5 +56,11 @@ div.menu{
 
 .container2{
 	background-color: #eee;
+}
+
+a.btn-xl.outline{
+	background-color: white;
+	font-size: 20px;
+	padding: 5px;
 }
 

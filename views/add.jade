@@ -7,10 +7,12 @@ block body
   +img-responsive("images/Logo.png","The Colenso Project")
   .container
     +navbar("","dropdown_menu")
-      +nav_item("/") Home
+      +nav_item("/","active") Home
       +nav_item("/browse") Browse
-      +nav_item("/search") Search
-      +nav_item("/add","active") Add
+      +nav_item_dropdown("#")(label ="Search")
+        +nav_item("/searchStr") String Search
+        +nav_item("/searchXQ") XQuery Search
+      +nav_item("/add") Add
   br
   br
   br

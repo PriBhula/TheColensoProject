@@ -17,6 +17,6 @@ block body
   br
   .container
     h1= title
-    .container2
-    each item in results
-        p: a(href="/viewFile?file=" + item)!{item}
+    .container
+      each item in files
+        p: a(href = "/viewFile?file=" + item)!{item}

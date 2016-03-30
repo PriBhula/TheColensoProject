@@ -16,7 +16,13 @@ block body
   br
   br
   .container
-    h1= title
-    .container2
-    each item in results
-        p: a(href="/viewFile?file=" + item)!{item}
+    h1 !{fileName}
+  .container
+    .btn-group(role='group', aria-label="...")
+      a(href="download?file="+fileName).btn-default.btn DL
+      br
+      br       
+      a.btn-xl.outline(href='javascript:history.back()') View File
+      br
+      br
+    p #{file}
